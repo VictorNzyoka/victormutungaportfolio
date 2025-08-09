@@ -189,7 +189,7 @@ export default function ContactPage() {
               </ul>
 
               <div className="mt-6 rounded-lg border border-neutral-800 bg-neutral-950/60 p-4 text-xs text-neutral-400">
-                Tip: Prefer the terminal? Type "email" or "contact" to open this page.
+               Tip: Prefer the terminal? Type &quot;email&quot; or &quot;contact&quot; to open this page.
               </div>
             </aside>
           </CardContent>
