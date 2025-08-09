@@ -124,7 +124,7 @@ export default function ContactPage() {
                   </label>
                   <Input
                     id="title"
-                    placeholder={`e.g. "Project inquiry"`}
+                    placeholder={`e.g. &quot;Project inquiry&quot;`}
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     required
