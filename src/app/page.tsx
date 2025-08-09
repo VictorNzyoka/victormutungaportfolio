@@ -1,103 +1,49 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import SiteFrame from "@/components/SiteFrame"
+import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { MotionFade, MotionFloat } from "@/components/Transtion"
+import { ArrowRight, TerminalSquare } from "lucide-react"
+import { useRouter } from "next/navigation"
+
+export default function HomePage() {
+  const router = useRouter()
+
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <SiteFrame>
+      {/* Match terminal height */}
+      <Card className="relative h-[var(--panel-h)] overflow-hidden border-neutral-800 bg-neutral-900/60">
+        {/* Subtle background accents */}
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -left-24 top-1/4 h-72 w-72 rounded-full bg-emerald-600/10 blur-3xl" />
+          <div className="absolute -right-16 bottom-1/4 h-56 w-56 rounded-full bg-cyan-500/10 blur-3xl" />
+          <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(0,0,0,0.25))]" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+
+        <CardContent className="relative z-10 flex h-full flex-col items-start justify-center p-6 sm:p-10">
+          <MotionFade delay={0.08}>
+            <h1 className="mt-4 text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">
+              Welcome,I’m Victor.
+            </h1>
+          </MotionFade>
+
+          <MotionFade delay={0.12}>
+            <p className="mt-3 max-w-prose text-sm leading-relaxed text-neutral-400">
+              I build practical, human‑centered software with a focus on clarity and performance. Use the terminal on
+              the right to explore, try {"'help'"}.
+            </p>
+          </MotionFade>
+
+          {/* Terminal hint pill */}
+          <MotionFloat amplitude={4} duration={7}>
+            <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-950/70 px-3 py-1.5 text-xs text-neutral-400">
+              <TerminalSquare className="h-3.5 w-3.5 text-emerald-400" />
+              Type {"'help'"} in the terminal to see commands.
+            </div>
+          </MotionFloat>
+        </CardContent>
+      </Card>
+    </SiteFrame>
+  )
 }
