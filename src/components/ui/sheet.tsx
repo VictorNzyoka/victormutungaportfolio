@@ -8,11 +8,8 @@ const Sheet = DialogPrimitive.Root;
 const SheetTrigger = DialogPrimitive.Trigger;
 const SheetClose = DialogPrimitive.Close;
 
-function SheetPortal({
-  className,
-  ...props
-}: DialogPrimitive.DialogPortalProps) {
-  return <DialogPrimitive.Portal className={className} {...props} />;
+function SheetPortal(props: DialogPrimitive.DialogPortalProps) {
+  return <DialogPrimitive.Portal {...props} />;
 }
 
 const SheetOverlay = React.forwardRef<
