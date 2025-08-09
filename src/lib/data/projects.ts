@@ -2,45 +2,43 @@ import type { Project } from "@/components/ProjectGrid"
 
 export const projects: Project[] = [
   {
-    id: "nebula",
-    name: "Nebula Analytics",
-    description: "Privacy-friendly product analytics with realtime dashboards.",
-    tags: ["react", "next.js", "edge", "charts"],
-    href: "#",
+    id: "maize-disease-detection",
+    name: "Maize Plant Disease Detection",
+    description:
+      "A mobile app using machine learning to help farmers detect maize plant diseases from plant images.",
+    tags: ["python", "tensorflow", "java", "machine-learning"],
+    href: "https://github.com/VictorNzyoka/Maize-plant-disease-predictor", 
   },
   {
-    id: "hinterland",
-    name: "Hinterland API",
-    description: "Typed toolkit and SDK for geospatial queries at scale.",
-    tags: ["node", "api", "typescript"],
-    href: "#",
+    id: "mess-management",
+    name: "Mess Management System",
+    description:
+      "A web-based application for Dedan Kimathi University's mess management with menu planning, inventory, and online ordering.",
+    tags: ["html", "css", "javascript", "php", "mysql"],
+    href: "https://github.com/VictorNzyoka/Students-Mess-Management-system",
   },
   {
-    id: "flux",
-    name: "Flux UI",
-    description: "Component library of accessible primitives and patterns.",
-    tags: ["ui", "a11y", "design-system"],
-    href: "#",
+    id: "ecommerce-platform",
+    name: "E-commerce Platform",
+    description:
+      "A full-stack e-commerce platform with Mpesa payment integration, Cloudinary for media storage, and PostgreSQL backend.",
+    tags: ["react", "node", "cloudinary", "mpesa-api", "postgresql"],
+    href: "https://victor-nzyoka-react-node-mongodb-e-commerce-application.vercel.app",
   },
   {
-    id: "orion",
-    name: "Orion CLI",
-    description: "Zero-config code quality CLI with smart fixes.",
-    tags: ["cli", "tooling", "lint"],
-    href: "#",
+    id: "voice-collection-platform",
+    name: "Nyansapo Voice Collection",
+    description:
+      "A voice collection system for fine-tuning speech models in letter naming and sounds, with offline mobile support.",
+    tags: ["next.js", "react-native", "firebase", "offline-first"],
+    href: "https://nyansapo-voice-collection.vercel.app/",
   },
   {
-    id: "quartz",
-    name: "Quartz CMS",
-    description: "Markdown-first content with live preview and AI assists.",
-    tags: ["cms", "markdown", "ai"],
-    href: "#",
-  },
-  {
-    id: "rivulet",
-    name: "Rivulet",
-    description: "Audio streaming starter with serverless ingestion.",
-    tags: ["audio", "serverless", "next.js"],
-    href: "#",
+    id: "voice-collection-mobile",
+    name: "Nyansapo Audio Recorder App",
+    description:
+      "Mobile version of the voice collection system, with offline recording and sync when connected.",
+    tags: ["react-native", "expo", "firebase", "offline"],
+    href: "https://expo.dev/accounts/nyansapo_ai/projects/AudioRecorderApp/builds/cac208fc-4e31-401a-88ec-192a32b80b1d",
   },
 ]
