@@ -1,5 +1,6 @@
 "use client"
 
+import type { NextPage } from "next"
 import SiteFrame from "@/components/SiteFrame"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -11,7 +12,7 @@ import { Github, FileText } from "lucide-react"
 export const aboutText =
   "Hi, I'm Victor, i have a deep passion for IT, specializing in both software development and machine learning.I have experience creating responsive and visually engaging web applications using HTML, CSS, JavaScript, React, and Next.js,Nodejs.I’m passionate about building solutions that seamlessly combine functionality and design, ensuring both a smooth user experience and technical efficiency."
 
-export default function AboutPage() {
+const AboutPage: NextPage = () => {
   return (
     <SiteFrame>
       {/* Card height is locked to match the terminal via --panel-h */}
@@ -20,7 +21,9 @@ export default function AboutPage() {
         <CardContent className="flex flex-col justify-center p-6 sm:p-8">
           <header>
             <h1 className="text-2xl font-semibold tracking-tight">About</h1>
-            <p className="mt-3 max-w-prose text-sm leading-relaxed text-neutral-300">{aboutText}</p>
+            <p className="mt-3 max-w-prose text-sm leading-relaxed text-neutral-300">
+              {aboutText}
+            </p>
           </header>
 
           <div className="mt-6 flex flex-wrap gap-3">
@@ -65,3 +68,5 @@ export default function AboutPage() {
     </SiteFrame>
   )
 }
+
+export default AboutPage
