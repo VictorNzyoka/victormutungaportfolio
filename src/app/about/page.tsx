@@ -7,12 +7,8 @@ import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Github, FileText } from "lucide-react"
-
-// About copy (edit freely)
-export const aboutText =
-  "Hi, I'm Victor, i have a deep passion for IT, specializing in both software development and machine learning.I have experience creating responsive and visually engaging web applications using HTML, CSS, JavaScript, React, and Next.js,Nodejs.I’m passionate about building solutions that seamlessly combine functionality and design, ensuring both a smooth user experience and technical efficiency."
-
-const AboutPage: NextPage = () => {
+import { aboutText } from "./content"
+const AboutPage = () => {
   return (
     <SiteFrame>
       {/* Card height is locked to match the terminal via --panel-h */}
