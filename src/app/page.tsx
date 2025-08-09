@@ -2,13 +2,10 @@
 
 import SiteFrame from "@/components/SiteFrame"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { MotionFade, MotionFloat } from "@/components/Transtion"
-import { ArrowRight, TerminalSquare } from "lucide-react"
-import { useRouter } from "next/navigation"
+import { TerminalSquare } from "lucide-react"
 
 export default function HomePage() {
-  const router = useRouter()
 
   return (
     <SiteFrame>

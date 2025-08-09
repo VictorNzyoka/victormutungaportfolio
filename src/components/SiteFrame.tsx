@@ -45,7 +45,7 @@ export default function SiteFrame({ children }: { children: React.ReactNode }) {
       {/* Split layout: share the same computed height on both columns */}
       <div
         className="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-4 py-6 lg:grid-cols-[minmax(0,1fr)_420px] lg:py-10"
-        style={{ ["--panel-h" as any]: panelHeight }}
+        style={{ "--panel-h": panelHeight } as React.CSSProperties }
       >
         <div className="min-w-0">
           <div className="min-h-[var(--panel-h)]">{children}</div>

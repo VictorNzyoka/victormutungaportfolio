@@ -137,7 +137,10 @@ export default function TerminalPanel({ closeMobile }: { closeMobile?: () => voi
         )
       } catch {}
       if (pathname !== path) router.push(path)
-      closeMobile?.()
+      if (closeMobile) {
+  closeMobile()
+}
+
     }, 600)
   }
 
@@ -385,7 +388,7 @@ function pathLabelFromRoute(route: string): string {
   return route.replace(/^\//, "")
 }
 
-function normalizeCdTargetToRoute(target: string, currentCwd: string): string | null {
+function normalizeCdTargetToRoute(target: string, _currentCwd: string): string | null {
   // Basic normalization for ~, .., relative names and absolute /names
   if (target === "~" || target === "/") return "/"
 

@@ -39,7 +39,7 @@ export default function ExperiencePage() {
 
                 {/* Timeline */}
                 <ol className="relative z-10 mt-8 space-y-6 border-l border-neutral-800 pl-6">
-                  {items.map((job, i) => (
+                  {items.map((job) => (
                     <li key={`${job.company}-${job.role}`} className="relative">
                       {/* Rail dot */}
                       <span className="absolute -left-2 top-3 h-3 w-3 rounded-full border border-emerald-600 bg-emerald-500/40" />

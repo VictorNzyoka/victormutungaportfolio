@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { MotionFade } from "@/components/Transtion"
-import { Github, Linkedin, MessageCircle, Mail, Globe,PhoneCall } from "lucide-react"
+import { Github, Linkedin, MessageCircle, Mail,PhoneCall } from "lucide-react"
 import { useMemo, useState } from "react"
 
 export default function ContactPage() {
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   </label>
                   <Input
                     id="title"
-                    placeholder='e.g. "Project inquiry"'
+                    placeholder={`e.g. "Project inquiry"`}
                     value={title}
                     onChange={(e) => setTitle(e.target.value)}
                     required
