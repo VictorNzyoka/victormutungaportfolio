@@ -36,24 +36,6 @@ export const projects: Project[] = [
     organization: "Nyansapo AI",
   },
   {
-    id: "voice-collection-platform",
-    name: "Nyansapo Voice Collection",
-    description:
-      "A voice collection system for fine-tuning speech models in letter naming and sounds, with offline mobile support.",
-    tags: ["next.js", "react-native", "firebase"],
-    organization: "Nyansapo AI",
-    href: "https://nyansapo-voice-collection.vercel.app/",
-  },
-  {
-    id: "voice-collection-mobile",
-    name: "Nyansapo Audio Recorder App",
-    description:
-      "Mobile version of the voice collection system, with offline recording and sync when connected.",
-    tags: ["react-native", "expo", "firebase"],
-    organization: "Nyansapo AI",
-    href: "https://expo.dev/accounts/nyansapo_ai/projects/AudioRecorderApp/builds/cac208fc-4e31-401a-88ec-192a32b80b1d",
-  },
-  {
     id: "maize-disease-detection",
     name: "Maize Plant Disease Detection",
     description:

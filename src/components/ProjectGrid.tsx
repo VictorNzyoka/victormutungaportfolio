@@ -31,7 +31,7 @@ export default function ProjectsGrid({ projects, filter }: { projects: Project[]
     return searchFields.some((field) => field.toLowerCase().includes(query))
   })
   const nyansapoProjects = filtered.filter((project) => project.organization === "Nyansapo AI")
-  const otherProjects = filtered.filter((project) => project.organization !== "Nyansapo AI")
+  const personalProjects = filtered.filter((project) => project.organization !== "Nyansapo AI")
 
   return (
     <div className="mt-8 flex flex-col gap-10">
@@ -52,14 +52,14 @@ export default function ProjectsGrid({ projects, filter }: { projects: Project[]
         </section>
       )}
 
-      {otherProjects.length > 0 && (
-        <section aria-labelledby="other-projects-heading">
+      {personalProjects.length > 0 && (
+        <section aria-labelledby="personal-projects-heading">
           <header className="mb-4">
-            <h2 id="other-projects-heading" className="text-lg font-semibold text-neutral-100">
-              Other selected projects
+            <h2 id="personal-projects-heading" className="text-lg font-semibold text-neutral-100">
+              Personal projects
             </h2>
           </header>
-          <ProjectCards projects={otherProjects} />
+          <ProjectCards projects={personalProjects} />
         </section>
       )}
 
@@ -99,7 +99,7 @@ function ProjectCards({ projects }: { projects: Project[] }) {
             </div>
           </CardContent>
           <CardFooter className="flex items-center justify-between gap-3 pt-2">
-            <span className="text-xs text-neutral-500">{project.organization ?? "Independent project"}</span>
+            <span className="text-xs text-neutral-500">{project.organization ?? "Personal project"}</span>
             {project.href && (
               <Button variant="ghost" size="sm" asChild className="gap-2 text-neutral-300">
                 <a href={project.href} target="_blank" rel="noopener noreferrer">

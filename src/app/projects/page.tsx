@@ -12,7 +12,7 @@ export default function ProjectsPage() {
             <div>
               <h1 className="text-2xl font-semibold tracking-tight">Selected work</h1>
               <p className="mt-2 max-w-prose text-sm text-neutral-400">
-                Education products, applied AI, and software projects from my work at Nyansapo AI and beyond.
+                Education products and applied AI from my work at Nyansapo AI, alongside my personal software projects.
               </p>
             </div>
           </div>
