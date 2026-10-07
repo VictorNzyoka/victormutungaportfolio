@@ -4,14 +4,15 @@ import SiteFrame from "@/components/SiteFrame"
 import { MotionFade } from "@/components/Transtion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code2, Boxes, Database, Wrench } from "lucide-react"
+import { Code2, Boxes, Database, Wrench, BrainCircuit } from "lucide-react"
 import type { JSX } from "react" // Import JSX to declare it
 
 const groups = {
   Languages: ["Python", "JavaScript", "TypeScript", "Java", "C++", "SQL"],
-  Frameworks: ["React", "Next.js", "Node.js", "Express", "Nextjs", "React Native"],
-  Databases: ["PostgreSQL", "MySQL", "MongoDB", "Superbase", "Firebase"],
-  Tools: ["Git", "Docker", "Cloud", "Bash", "Jest", "Figma"],
+  Frameworks: ["React", "Next.js", "Node.js", "Express", "React Native"],
+  Databases: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Firebase"],
+  "AI & ML": ["OCR fine-tuning", "Speech-to-text (STT)", "Model deployment"],
+  Tools: ["Git", "Docker", "Azure", "Firebase", "Cloud Functions", "Bash", "Jest", "Figma"],
 } as const;
 
 
@@ -19,6 +20,7 @@ const icons: Record<keyof typeof groups, JSX.Element> = {
   Languages: <Code2 className="h-4 w-4 text-emerald-400" />,
   Frameworks: <Boxes className="h-4 w-4 text-emerald-400" />,
   Databases: <Database className="h-4 w-4 text-emerald-400" />,
+  "AI & ML": <BrainCircuit className="h-4 w-4 text-emerald-400" />,
   Tools: <Wrench className="h-4 w-4 text-emerald-400" />,
 }
 

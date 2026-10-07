@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VictorNzyoka",
-  description: "Portfolio",
+  title: "Victor Nzyoka | Software Engineer",
+  description:
+    "Victor Nzyoka is a software engineer building education products, applied AI, and reliable web applications.",
 };
 
 export default function RootLayout({

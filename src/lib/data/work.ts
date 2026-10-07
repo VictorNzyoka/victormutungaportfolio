@@ -14,8 +14,8 @@ export const workItems: WorkItem[] = [
     period: "Mar 2025 – Present",
     start: "2025-03-01",
     summary:
-      "Building user‑centric web apps with Next.js and Firebase, crafting clean, responsive UI in Figma, and automating backend tasks with Cloud Functions.",
-    tech: ["Next.js", "Firebase", "Cloud Functions", "Figma", "TypeScript"],
+      "Contributing to Nyansapo AI's learning and assessment products: working on Hekima Learning and StadiMath, fine-tuning OCR and speech-to-text models deployed on Azure, and maintaining the NAO Assessments dashboard.",
+    tech: ["Next.js", "Firebase", "TypeScript", "Azure", "OCR", "Speech-to-text", "Model fine-tuning"],
   },
   {
     role: "Backend Intern",
