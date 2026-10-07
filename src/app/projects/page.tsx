@@ -10,9 +10,9 @@ export default function ProjectsPage() {
         <section className="rounded-xl border border-neutral-800 bg-neutral-900/60 p-8">
           <div className="flex items-end justify-between gap-4">
             <div>
-              <h1 className="text-2xl font-semibold tracking-tight">Projects</h1>
+              <h1 className="text-2xl font-semibold tracking-tight">Selected work</h1>
               <p className="mt-2 max-w-prose text-sm text-neutral-400">
-                Use the terminal: filter {"<q>"} or open {"<name>"}.
+                Education products, applied AI, and software projects from my work at Nyansapo AI and beyond.
               </p>
             </div>
           </div>

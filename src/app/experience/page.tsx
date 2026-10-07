@@ -33,7 +33,7 @@ export default function ExperiencePage() {
                   </span>
                   <h1 className="mt-4 text-2xl font-semibold tracking-tight">Work Experience</h1>
                   <p className="mt-2 max-w-prose text-sm text-neutral-400">
-                    A brief snapshot of recent roles and impact.
+                    Product engineering, applied AI, and backend experience across education technology.
                   </p>
                 </header>
 
