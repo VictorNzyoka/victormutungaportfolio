@@ -5,8 +5,8 @@ export const projects: Project[] = [
     id: "hekima-learning",
     name: "Hekima Learning",
     description:
-      "An early-learning app focused on sound learning for Playgroup, PP1, and PP2 children.",
-    tags: ["Early learning", "Speech sounds", "Playgroup–PP2"],
+      "A React Native early-learning app focused on speech sounds for Playgroup, PP1, and PP2. I work on its Next.js authentication backend and Firebase data storage, including Cloud Functions.",
+    tags: ["React Native", "Next.js authentication", "Firebase", "Cloud Functions", "Speech sounds", "Playgroup–PP2"],
     organization: "Nyansapo AI",
     availability: "Google Play",
   },
@@ -14,16 +14,16 @@ export const projects: Project[] = [
     id: "stadimath",
     name: "StadiMath",
     description:
-      "A math-focused learning app I have contributed to as part of Nyansapo AI's education products.",
-    tags: ["Math learning", "Stadi Learn", "Education"],
+      "A React Native math-learning app for Stadi Learn, backed by a Next.js backend and Firebase, with DeepSeek AI integrated for analysis.",
+    tags: ["React Native", "Next.js", "Firebase", "DeepSeek AI", "Math learning"],
     organization: "Nyansapo AI",
   },
   {
     id: "ocr-stt-models",
     name: "OCR & STT Models",
     description:
-      "Fine-tuned OCR and speech-to-text (STT) models and deployed them on Microsoft Azure.",
-    tags: ["OCR", "Speech-to-text", "Model fine-tuning", "Azure"],
+      "Fine-tuned Microsoft TrOCR Base Handwritten for OCR and Whisper Small for speech-to-text using Hugging Face Transformers. Built FastAPI inference APIs, containerized them with Docker, and deployed them to Microsoft Azure.",
+    tags: ["Hugging Face Transformers", "TrOCR fine-tuning", "Whisper Small fine-tuning", "FastAPI", "Docker", "Azure deployment"],
     organization: "Nyansapo AI",
     availability: "Deployed on Azure",
   },
@@ -31,8 +31,8 @@ export const projects: Project[] = [
     id: "nao-assessments-dashboard",
     name: "NAO Assessments Dashboard",
     description:
-      "Ongoing maintenance of the dashboard for the NAO Assessments app.",
-    tags: ["Dashboard", "Assessments", "Product maintenance"],
+      "Maintaining the NAO Assessments dashboard built with Next.js, Firebase, and Redux.",
+    tags: ["Next.js", "Firebase", "Redux", "Dashboard maintenance"],
     organization: "Nyansapo AI",
   },
   {

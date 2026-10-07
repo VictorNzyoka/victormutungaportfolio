@@ -14,8 +14,8 @@ export const workItems: WorkItem[] = [
     period: "Mar 2025 – Present",
     start: "2025-03-01",
     summary:
-      "Contributing to Nyansapo AI's learning and assessment products: working on Hekima Learning and StadiMath, fine-tuning OCR and speech-to-text models deployed on Azure, and maintaining the NAO Assessments dashboard.",
-    tech: ["Next.js", "Firebase", "TypeScript", "Azure", "OCR", "Speech-to-text", "Model fine-tuning"],
+      "Building React Native learning apps with Next.js and Firebase backends; integrating DeepSeek AI for analysis; maintaining the Next.js/Firebase/Redux NAO Assessments dashboard; and fine-tuning TrOCR and Whisper models, serving them through FastAPI APIs containerized with Docker and deployed on Azure.",
+    tech: ["React Native", "Next.js", "Firebase", "Cloud Functions", "Redux", "DeepSeek AI", "TypeScript", "Python", "Hugging Face Transformers", "TrOCR", "Whisper Small", "FastAPI", "Docker", "Azure"],
   },
   {
     role: "Backend Intern",

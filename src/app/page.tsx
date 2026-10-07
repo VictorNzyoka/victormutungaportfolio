@@ -27,8 +27,9 @@ export default function HomePage() {
 
           <MotionFade delay={0.12}>
             <p className="mt-3 max-w-prose text-sm leading-relaxed text-neutral-400">
-              I build practical software for learning and assessment. At Nyansapo AI, my work spans early-learning apps,
-              OCR and speech-to-text models deployed on Azure, and assessment products.
+              I build practical software for learning and assessment. At Nyansapo AI, I contribute to Hekima Learning and
+              Stadi Learn, maintain the NAO Assessments dashboard, and fine-tune OCR and speech-to-text models before
+              packaging inference services with FastAPI and Docker for Azure deployment.
             </p>
           </MotionFade>
 

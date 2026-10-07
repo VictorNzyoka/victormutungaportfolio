@@ -9,10 +9,18 @@ import type { JSX } from "react" // Import JSX to declare it
 
 const groups = {
   Languages: ["Python", "JavaScript", "TypeScript", "Java", "C++", "SQL"],
-  Frameworks: ["React", "Next.js", "Node.js", "Express", "React Native"],
+  Frameworks: ["React", "Next.js", "Node.js", "Express", "React Native", "FastAPI"],
   Databases: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Firebase"],
-  "AI & ML": ["OCR fine-tuning", "Speech-to-text (STT)", "Model deployment"],
-  Tools: ["Git", "Docker", "Azure", "Firebase", "Cloud Functions", "Bash", "Jest", "Figma"],
+  "AI & ML": [
+    "OCR model fine-tuning",
+    "Speech-to-text fine-tuning",
+    "Hugging Face Transformers",
+    "TrOCR (handwritten OCR)",
+    "Whisper Small",
+    "Inference API development",
+    "DeepSeek AI analysis",
+  ],
+  Tools: ["Git", "Docker", "Microsoft Azure", "Cloud Functions", "Bash", "Jest", "Figma"],
 } as const;
 
 
@@ -30,7 +38,12 @@ export default function SkillsPage() {
       <MotionFade>
         {/* Match terminal height */}
         <Card className="h-[var(--panel-h)] overflow-hidden border-neutral-800 bg-neutral-900/60">
-          <CardContent className="flex h-full flex-col p-6 sm:p-8">
+          <CardContent
+            aria-label="Technology skills"
+            role="region"
+            tabIndex={0}
+            className="flex h-full min-h-0 flex-col overflow-y-auto overscroll-contain p-6 sm:p-8"
+          >
             <header>
               <span className="inline-flex items-center rounded-full border border-neutral-800 bg-neutral-950/60 px-3 py-1 text-xs text-neutral-400">
                 Tech Stack
