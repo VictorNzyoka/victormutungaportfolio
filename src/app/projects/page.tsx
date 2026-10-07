@@ -1,9 +1,16 @@
+import ProjectsGrid from "@/components/ProjectGrid"
 import SiteFrame from "@/components/SiteFrame"
 import { MotionFade } from "@/components/Transtion"
-import { Suspense } from "react"
-import ProjectsClient from "./projectclient"
+import { projects } from "@/lib/data/projects"
 
-export default function ProjectsPage() {
+type ProjectsPageProps = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function ProjectsPage({ searchParams }: ProjectsPageProps) {
+  const params = await searchParams
+  const filter = Array.isArray(params.q) ? params.q[0] : params.q
+
   return (
     <SiteFrame>
       <MotionFade>
@@ -17,9 +24,7 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          <Suspense fallback={<div className="mt-6 text-sm text-neutral-500">Loading…</div>}>
-            <ProjectsClient />
-          </Suspense>
+          <ProjectsGrid projects={projects} filter={filter} />
         </section>
       </MotionFade>
     </SiteFrame>
